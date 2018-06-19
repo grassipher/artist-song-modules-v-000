@@ -12,6 +12,14 @@ class Song
   def initialize
     @@songs << self
   end
+  
+  def self.reset_all
+    @@songs.clear
+  end
+  
+  def self.count
+    @@songs.count
+  end
 
   def self.find_by_name(name)
     @@songs.detect{|a| a.name == name}
