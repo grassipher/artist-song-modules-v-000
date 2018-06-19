@@ -1,7 +1,10 @@
-def self.reset_all
-    @@songs.clear
+module Memorable
+  @@all = []
+  def reset_all
+    @@all.clear
   end
   
-  def self.count
-    @@songs.count
+  def count
+    @@all.count
   end
+end
